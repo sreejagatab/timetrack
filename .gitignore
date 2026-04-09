@@ -1,0 +1,18 @@
+# ScriptCase generated files (large, not needed in repo)
+videos/
+screenshots/
+*.webm
+*.png
+
+# Temporary files
+*.tmp
+*.log
+plan_raw.txt
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+Thumbs.db
+.DS_Store
