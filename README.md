@@ -2,6 +2,17 @@
 
 A production-ready, full-featured Time Tracking System built with **ScriptCase v9** and **PostgreSQL 14**. Designed for medium-sized organizations (20-100 users) with multi-department, role-based access, and comprehensive reporting.
 
+## Live Demo
+
+- **Application**: [https://timetracker.jagatab.uk](https://timetracker.jagatab.uk/scriptcase/app/project/menu_main/)
+- **Login**: [https://timetracker.jagatab.uk/scriptcase/app/project/app_Login/](https://timetracker.jagatab.uk/scriptcase/app/project/app_Login/)
+- **Credentials**: `admin` / `admin`
+
+## Documentation
+
+- [User Guide](docs/USER_GUIDE.md) — How to use the system (clock in/out, timesheets, leave, projects)
+- [Admin Guide](docs/ADMIN_GUIDE.md) — System administration, user management, configuration
+
 ---
 
 ## Features
@@ -260,21 +271,6 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 | **Finance** | View billing reports, project costs, payroll reports (read-only) |
 
 ---
-
-## Configuration Files
-
-| File | Purpose |
-|------|---------|
-| `timetrack_ddl.sql` | Complete database schema (tables, views, triggers, indexes, seed data) |
-| `test_data.sql` | Sample data for testing (10 employees, 4 projects, 3 clients, etc.) |
-| `lib_timetrack_core.php` | Core utility library (employee lookup, security, audit, notifications) |
-| `lib_timesheet_calc.php` | Timesheet calculation library (recalc totals, auto-populate, overtime) |
-| `sc_phase2_lookups.php` | FK lookup field configuration script |
-| `sc_phase4_events.php` | Business logic event injection script |
-| `sc_configure_menu.php` | Menu structure configuration script |
-| `sc_configure_dashboard_clock.php` | Dashboard and Clock In/Out configuration |
-| `bulk_create_apps_v4.php` | Bulk application creation script |
-| `sc_batch_create.py` | Playwright automation for batch app creation |
 
 ---
 
